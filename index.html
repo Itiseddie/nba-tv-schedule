@@ -275,7 +275,7 @@ footer { color: var(--muted); font-size: 0.8rem; border-top: 0.1rem solid var(--
     nbcpk: { cls: "hy", svc: "YouTube TV or Peacock", pick: "Try this first", chan: "NBC", note: "If it is not on NBC, it is only on Peacock." },
     nbcsn: { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "NBCSN", note: "Peacock has this game too. You do not need it." },
     espn:  { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "ESPN", note: "The ESPN app has it too. You do not need it." },
-    local: { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "Warriors channel", note: "Warriors games are blocked on Amazon in San Francisco." },
+    local: { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "Warriors channel", note: "" },
     prime: { cls: "lp",  svc: "Amazon", pick: "Open this", chan: "Prime Video", note: "A national game, shown to everyone." },
     nbatv: { cls: "lp",  svc: "Amazon", pick: "Open this", chan: "Prime Video", note: "This game is on NBA TV. Find it in Prime Video." },
     lp:    { cls: "lp",  svc: "Amazon", pick: "Open this", chan: "Prime Video", note: "Not on national TV. Find it in Prime Video." }
@@ -371,7 +371,7 @@ footer { color: var(--muted); font-size: 0.8rem; border-top: 0.1rem solid var(--
       '<div class="watch ' + v.cls + '"><span class="lbl">Watch on</span><span class="svc">' + v.svc +
       '</span>' + (v.warn ? '<span class="warn">' + v.warn + "</span>" : "") +
       '<span class="chan' + (v.chan.length > 5 ? " long" : "") + '"><small>' + v.pick + "</small><b>" + v.chan +
-      '</b></span><span class="note">' + esc(g.n || v.note) + "</span></div>";
+      "</b></span>" + (g.n || v.note ? '<span class="note">' + esc(g.n || v.note) + "</span>" : "") + "</div>";
     return '<article class="game ' + st + '"><div class="head"><span class="time">' + timeFmt.format(g.ms) +
       "</span>" + pill + '</div><div class="teams">' + team(g.a, sc && sc.a, sc && sc.a > sc.h) + '<span class="at">at</span>' + team(g.h, sc && sc.h, sc && sc.h > sc.a) +
       "</div>" + watch + "</article>";
