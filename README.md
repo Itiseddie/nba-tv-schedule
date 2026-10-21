@@ -31,7 +31,7 @@ To refresh right now: **Actions → Refresh NBA data → Run workflow**.
 | `prime` | Prime Video (a national game, League Pass not needed) |
 | `nbatv`, `lp` | Prime Video, then NBA League Pass |
 | `local` | YouTube TV, Warriors channel (Warriors games that are not on national TV are blacked out on League Pass in San Francisco; set in `prep()` in `index.html`) |
-| `peacock` | Peacock only (YouTube TV does not have it) |
+| `peacock` | Peacock only: a black card with a yellow "Not on YouTube TV" tag, so it never looks like the other services |
 
 ## Fixing a wrong or missing broadcast
 

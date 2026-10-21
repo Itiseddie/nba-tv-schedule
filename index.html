@@ -29,6 +29,7 @@ img { max-width: 100%; }
   --edge: #1D2939;
   --ytv: #B1141F;
   --lp: #14367A;
+  --pk: #1B1B22;
   --on-service: #FFFFFF;
   --live: #0A6B36;
   --on-live: #FFFFFF;
@@ -41,6 +42,7 @@ img { max-width: 100%; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0C1118; --surface: #161D27; --ink: #F4F6F9; --muted: #B4BECC; --line: #35424F; --edge: #9AA6B6;
+    --pk: #000000;
     --ytv: #D92D3A; --lp: #3B68CC; --on-service: #FFFFFF;
     --live: #5BE08F; --on-live: #06210F; --live-bg: #12301F; --focus: #7AA2FF;
     color-scheme: dark;
@@ -48,6 +50,7 @@ img { max-width: 100%; }
 }
 :root[data-theme="dark"] {
   --bg: #0C1118; --surface: #161D27; --ink: #F4F6F9; --muted: #B4BECC; --line: #35424F; --edge: #9AA6B6;
+  --pk: #000000;
   --ytv: #D92D3A; --lp: #3B68CC; --on-service: #FFFFFF;
   --live: #5BE08F; --on-live: #06210F; --live-bg: #12301F; --focus: #7AA2FF;
   color-scheme: dark;
@@ -135,6 +138,8 @@ h1 { font-family: var(--font-display); font-weight: 800; font-size: 1.7rem; line
 .watch { margin-top: auto; padding: 0.9rem 1rem 1rem; color: var(--on-service); display: flex; flex-direction: column; gap: 0.2rem; }
 .watch.ytv { background: var(--ytv); }
 .watch.lp { background: var(--lp); }
+.watch.pk { background: var(--pk); }
+.watch .warn { align-self: flex-start; background: #FFD84D; color: #111111; border-radius: 0.5rem; padding: 0.3rem 0.7rem; margin-top: 0.4rem; font: 800 1.15rem/1.15 var(--font-display); }
 .watch .lbl { font: 700 0.8rem var(--font-display); letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.95; }
 .watch .svc { font: 800 1.6rem/1.05 var(--font-display); }
 .watch .chan { background: var(--surface); color: var(--ink); border-radius: 0.7rem; padding: 0.6rem 1rem 0.75rem; margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.1rem; }
@@ -265,7 +270,7 @@ footer { color: var(--muted); font-size: 0.8rem; border-top: 0.1rem solid var(--
 
   var SERVICE = {
     abc:   { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "ABC", note: "The ESPN app has it too. You do not need it." },
-    peacock: { cls: "lp", svc: "Peacock", pick: "Open this", chan: "Peacock", note: "Only on Peacock. YouTube TV does not have this game." },
+    peacock: { cls: "pk", svc: "Peacock", pick: "Open this", chan: "Peacock", warn: "Not on YouTube TV", note: "This game is only on Peacock." },
     nbc:   { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "NBC", note: "Peacock has this game too. You do not need it." },
     nbcsn: { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "NBCSN", note: "Peacock has this game too. You do not need it." },
     espn:  { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "ESPN", note: "The ESPN app has it too. You do not need it." },
@@ -363,7 +368,8 @@ footer { color: var(--muted); font-size: 0.8rem; border-top: 0.1rem solid var(--
     else if (until(g, now)) pill = '<span class="pill">' + until(g, now) + "</span>";
     var watch = st === "done" ? "" :
       '<div class="watch ' + v.cls + '"><span class="lbl">Watch on</span><span class="svc">' + v.svc +
-      '</span><span class="chan' + (v.chan.length > 5 ? " long" : "") + '"><small>' + v.pick + "</small><b>" + v.chan +
+      '</span>' + (v.warn ? '<span class="warn">' + v.warn + "</span>" : "") +
+      '<span class="chan' + (v.chan.length > 5 ? " long" : "") + '"><small>' + v.pick + "</small><b>" + v.chan +
       '</b></span><span class="note">' + esc(g.n || v.note) + "</span></div>";
     return '<article class="game ' + st + '"><div class="head"><span class="time">' + timeFmt.format(g.ms) +
       "</span>" + pill + '</div><div class="teams">' + team(g.a, sc && sc.a, sc && sc.a > sc.h) + '<span class="at">at</span>' + team(g.h, sc && sc.h, sc && sc.h > sc.a) +
