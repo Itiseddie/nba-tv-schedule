@@ -269,16 +269,16 @@ footer { color: var(--muted); font-size: 0.8rem; border-top: 0.1rem solid var(--
   });
 
   var SERVICE = {
-    abc:   { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "ABC", note: "The ESPN app has it too. You do not need it." },
+    abc:   { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "ABC", note: "" },
     peacock: { cls: "pk", svc: "Peacock", pick: "Open this", chan: "Peacock", warn: "Not on YouTube TV", note: "This game is only on Peacock." },
     nbc:   { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "NBC", note: "Peacock has this game too. You do not need it." },
     nbcpk: { cls: "hy", svc: "YouTube TV or Peacock", pick: "Try this first", chan: "NBC", note: "If it is not on NBC, it is only on Peacock." },
     nbcsn: { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "NBCSN", note: "Peacock has this game too. You do not need it." },
-    espn:  { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "ESPN", note: "The ESPN app has it too. You do not need it." },
+    espn:  { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "ESPN", note: "" },
     local: { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "Warriors channel", note: "" },
-    prime: { cls: "lp",  svc: "Amazon", pick: "Open this", chan: "Prime Video", note: "A national game, shown to everyone." },
-    nbatv: { cls: "lp",  svc: "Amazon", pick: "Open this", chan: "Prime Video", note: "This game is on NBA TV. Find it in Prime Video." },
-    lp:    { cls: "lp",  svc: "Amazon", pick: "Open this", chan: "Prime Video", note: "Not on national TV. Find it in Prime Video." }
+    prime: { cls: "lp",  svc: "Amazon", pick: "Open this", chan: "Amazon", note: "A national game, shown to everyone." },
+    nbatv: { cls: "lp",  svc: "Amazon", pick: "Open this", chan: "Amazon", note: "This game is on NBA TV." },
+    lp:    { cls: "lp",  svc: "Amazon", pick: "Open this", chan: "Amazon", note: "Not on national TV." }
   };
 
   var timeFmt = new Intl.DateTimeFormat("en-US", { timeZone: TZ, hour: "numeric", minute: "2-digit" });
@@ -442,7 +442,7 @@ footer { color: var(--muted); font-size: 0.8rem; border-top: 0.1rem solid var(--
       if (main.length) html += cards(main, now);
       if (!main.length && !extra.length) html += '<p class="empty">No games.</p>';
       if (extra.length) {
-        html += "<h3>More games<span>Amazon Prime Video</span></h3>" + cards(extra, now);
+        html += "<h3>More games<span>Amazon</span></h3>" + cards(extra, now);
       }
       html += "</section>";
     }

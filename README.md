@@ -29,7 +29,7 @@ To refresh right now: **Actions → Refresh NBA data → Run workflow**.
 |---|---|
 | `nbc`, `nbcsn`, `espn`, `abc` | YouTube TV, with the channel name in a big tile |
 | `nbcpk` | Red-and-black card: "YouTube TV or Peacock", NBC tile, "If it is not on NBC, it is only on Peacock." Used automatically when a day has exactly two NBC games (NBC's Tuesday doubleheader), because in some areas NBC airs only one. To settle it, set one of the two to `peacock` in `data/overrides.json` |
-| `prime`, `nbatv`, `lp` | "Amazon" with a Prime Video tile (NBA League Pass is bought through Prime Video) |
+| `prime`, `nbatv`, `lp` | "Amazon" with an Amazon tile (NBA League Pass is bought through Prime Video) |
 | `local` | YouTube TV, Warriors channel (Warriors games not on national TV are blacked out on League Pass in San Francisco but play locally on YouTube TV; set in `prep()` in `index.html`; no note is shown on the card) |
 | `peacock` | Peacock only: a black card with a yellow "Not on YouTube TV" tag, so it never looks like the other services |
 
