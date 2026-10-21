@@ -139,6 +139,7 @@ h1 { font-family: var(--font-display); font-weight: 800; font-size: 1.7rem; line
 .watch.ytv { background: var(--ytv); }
 .watch.lp { background: var(--lp); }
 .watch.pk { background: var(--pk); }
+.watch.hy { background: linear-gradient(100deg, var(--ytv) 0 50%, var(--pk) 50% 100%); }
 .watch .warn { align-self: flex-start; background: #FFD84D; color: #111111; border-radius: 0.5rem; padding: 0.3rem 0.7rem; margin-top: 0.4rem; font: 800 1.15rem/1.15 var(--font-display); }
 .watch .lbl { font: 700 0.8rem var(--font-display); letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.95; }
 .watch .svc { font: 800 1.6rem/1.05 var(--font-display); }
@@ -174,7 +175,7 @@ footer { color: var(--muted); font-size: 0.8rem; border-top: 0.1rem solid var(--
 
   <footer>
     Schedule, channels and final scores come from ESPN&rsquo;s public feed and refresh through the day.
-    Broadcasts can change. Games not on national TV are listed under League Pass.
+    Broadcasts can change. Games not on national TV are listed under More games, on Amazon.
   </footer>
 </div>
 
@@ -185,7 +186,6 @@ footer { color: var(--muted); font-size: 0.8rem; border-top: 0.1rem solid var(--
 
   // t: nbc = NBC (+Peacock), nbcsn = NBCSN (+Peacock), espn = ESPN, prime = Prime Video national game,
   //    nbatv = NBA TV (inside League Pass), lp = local TV / League Pass only (becomes "local" for Warriors)
-  var NBC_NOTE = "In some areas NBC shows only one of this night's two games. Check the NBC guide.";
   var GAMES = [
     // Tue Oct 20
     { s: "2026-10-20T19:00:00Z", a: "Boston Celtics", h: "Detroit Pistons", t: "nbc" },
@@ -247,8 +247,8 @@ footer { color: var(--muted); font-size: 0.8rem; border-top: 0.1rem solid var(--
     { s: "2026-10-27T01:00:00Z", a: "Memphis Grizzlies", h: "Utah Jazz", t: "lp" },
     { s: "2026-10-27T02:00:00Z", a: "Golden State Warriors", h: "Denver Nuggets", t: "nbcsn" },
     // Tue Oct 27 (only the NBC games are known so far)
-    { s: "2026-10-28T00:00:00Z", a: "Detroit Pistons", h: "New York Knicks", t: "nbc", n: NBC_NOTE },
-    { s: "2026-10-28T03:00:00Z", a: "Portland Trail Blazers", h: "Los Angeles Lakers", t: "nbc", n: NBC_NOTE }
+    { s: "2026-10-28T00:00:00Z", a: "Detroit Pistons", h: "New York Knicks", t: "nbcpk" },
+    { s: "2026-10-28T03:00:00Z", a: "Portland Trail Blazers", h: "Los Angeles Lakers", t: "nbcpk" }
   ];
   // Warriors games that are not on national TV are blacked out on League Pass in San Francisco.
   function prep(g) {
@@ -272,12 +272,13 @@ footer { color: var(--muted); font-size: 0.8rem; border-top: 0.1rem solid var(--
     abc:   { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "ABC", note: "The ESPN app has it too. You do not need it." },
     peacock: { cls: "pk", svc: "Peacock", pick: "Open this", chan: "Peacock", warn: "Not on YouTube TV", note: "This game is only on Peacock." },
     nbc:   { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "NBC", note: "Peacock has this game too. You do not need it." },
+    nbcpk: { cls: "hy", svc: "YouTube TV or Peacock", pick: "Try this first", chan: "NBC", note: "If it is not on NBC, it is only on Peacock." },
     nbcsn: { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "NBCSN", note: "Peacock has this game too. You do not need it." },
     espn:  { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "ESPN", note: "The ESPN app has it too. You do not need it." },
-    local: { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "Warriors channel", note: "League Pass blocks Warriors games in San Francisco." },
-    prime: { cls: "lp",  svc: "Prime Video", pick: "Open this", chan: "Prime Video", note: "A national game on Prime Video. League Pass is not needed." },
-    nbatv: { cls: "lp",  svc: "Prime Video", pick: "Open this", chan: "NBA League Pass", note: "This game is on NBA TV, which League Pass includes." },
-    lp:    { cls: "lp",  svc: "Prime Video", pick: "Open this", chan: "NBA League Pass", note: "Not on national TV. A local team's game may be blocked." }
+    local: { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "Warriors channel", note: "Warriors games are blocked on Amazon in San Francisco." },
+    prime: { cls: "lp",  svc: "Amazon", pick: "Open this", chan: "Prime Video", note: "A national game, shown to everyone." },
+    nbatv: { cls: "lp",  svc: "Amazon", pick: "Open this", chan: "Prime Video", note: "This game is on NBA TV. Find it in Prime Video." },
+    lp:    { cls: "lp",  svc: "Amazon", pick: "Open this", chan: "Prime Video", note: "Not on national TV. Find it in Prime Video." }
   };
 
   var timeFmt = new Intl.DateTimeFormat("en-US", { timeZone: TZ, hour: "numeric", minute: "2-digit" });
@@ -441,7 +442,7 @@ footer { color: var(--muted); font-size: 0.8rem; border-top: 0.1rem solid var(--
       if (main.length) html += cards(main, now);
       if (!main.length && !extra.length) html += '<p class="empty">No games.</p>';
       if (extra.length) {
-        html += "<h3>More games<span>Prime Video &rarr; NBA League Pass</span></h3>" + cards(extra, now);
+        html += "<h3>More games<span>Amazon Prime Video</span></h3>" + cards(extra, now);
       }
       html += "</section>";
     }
@@ -456,13 +457,14 @@ footer { color: var(--muted); font-size: 0.8rem; border-top: 0.1rem solid var(--
     var list = json.games.map(function (g) {
       return prep({ id: g.id, s: g.s, a: g.a, h: g.h, t: g.t, state: g.state, as: g.as, hs: g.hs, n: g.n });
     });
-    // In some areas NBC shows only one of two same-night NBC games.
+    // In some areas NBC shows only one of two same-night NBC games, and we can't tell which.
+    // Both get the red-and-black "NBC or Peacock" card until the data file says otherwise.
     var perDay = {};
     list.forEach(function (g) {
       if (g.t === "nbc") { var k = dayKeyFmt.format(g.ms); (perDay[k] = perDay[k] || []).push(g); }
     });
     Object.keys(perDay).forEach(function (k) {
-      if (perDay[k].length === 2) perDay[k].forEach(function (g) { g.n = g.n || NBC_NOTE; });
+      if (perDay[k].length === 2) perDay[k].forEach(function (g) { g.t = "nbcpk"; });
     });
     GAMES = list;
     PARTIAL = json.partial || {};

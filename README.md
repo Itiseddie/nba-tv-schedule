@@ -2,7 +2,7 @@
 
 A large-text page that answers one question: **where do I turn on tonight's NBA game?**
 
-Built for an elderly family member who loves the NBA, has trouble reading small text, and is not comfortable with technology. Each game gets one big card with the teams, the tip-off time (Pacific), and the service to open (YouTube TV, or Prime Video / NBA League Pass), with the channel name in a large tile.
+Built for an elderly family member who loves the NBA, has trouble reading small text, and is not comfortable with technology. Each game gets one big card with the teams, the tip-off time (Pacific), and the service to open (YouTube TV, Peacock, or Amazon Prime Video, where her NBA League Pass lives), with the channel name in a large tile.
 
 ## What it does
 
@@ -28,8 +28,8 @@ To refresh right now: **Actions → Refresh NBA data → Run workflow**.
 | Type | Shown as |
 |---|---|
 | `nbc`, `nbcsn`, `espn`, `abc` | YouTube TV, with the channel name in a big tile |
-| `prime` | Prime Video (a national game, League Pass not needed) |
-| `nbatv`, `lp` | Prime Video, then NBA League Pass |
+| `nbcpk` | Red-and-black card: "YouTube TV or Peacock", NBC tile, "If it is not on NBC, it is only on Peacock." Used automatically when a day has exactly two NBC games (NBC's Tuesday doubleheader), because in some areas NBC airs only one. To settle it, set one of the two to `peacock` in `data/overrides.json` |
+| `prime`, `nbatv`, `lp` | "Amazon" with a Prime Video tile (NBA League Pass is bought through Prime Video) |
 | `local` | YouTube TV, Warriors channel (Warriors games that are not on national TV are blacked out on League Pass in San Francisco; set in `prep()` in `index.html`) |
 | `peacock` | Peacock only: a black card with a yellow "Not on YouTube TV" tag, so it never looks like the other services |
 
@@ -54,7 +54,7 @@ The game id is in ESPN's feed (and in `data/schedule.json`). `t` is one of the t
 
 - The ESPN feed is public but unofficial and undocumented. It could change or stop working.
 - Whether a browser may read ESPN's feed directly was not verified when this was built. If it is blocked, scores still arrive through the data file, just a few minutes later.
-- ESPN lists only national broadcasts. Every other game is shown as League Pass.
+- ESPN lists only national broadcasts. Every other game is shown under "More games" on Amazon.
 - GitHub pauses scheduled workflows in public repos after about 60 days without repository activity. If the refresh stops, re-enable it from the Actions tab.
 
 ## Credits and notes
