@@ -117,7 +117,11 @@ async function main() {
   for (const [id, patch] of Object.entries(ov.games || {})) {
     if (byId.has(id)) Object.assign(byId.get(id), patch);
   }
-  const games = [...byId.values()].sort((x, y) => x.s.localeCompare(y.s) || x.id.localeCompare(y.id));
+  // Keep today and the next 7 days (Pacific), plus yesterday so finished games still show a score.
+  const lastDay = ptDay.format(now + 7 * 86400000);
+  const games = [...byId.values()]
+    .filter((g) => ptDay.format(Date.parse(g.s)) <= lastDay)
+    .sort((x, y) => x.s.localeCompare(y.s) || x.id.localeCompare(y.id));
   if (!games.length) throw new Error("No games came back; keeping the existing file.");
 
   const partial = { ...partialDays(games, now), ...(ov.partial || {}) };

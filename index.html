@@ -402,7 +402,8 @@ footer { color: var(--muted); font-size: 0.8rem; border-top: 0.1rem solid var(--
       if (!byDay[k]) { byDay[k] = []; keys.push(k); }
       byDay[k].push(g);
     });
-    var upcoming = keys.filter(function (k) { return k >= todayKey; });
+    var lastKey = dayKeyFmt.format(now + 7 * 86400000);
+    var upcoming = keys.filter(function (k) { return k >= todayKey && k <= lastKey; });
     if (upcoming.length) keys = upcoming;
     if (sel === null || keys.indexOf(sel) < 0) sel = keys.indexOf(todayKey) >= 0 ? todayKey : keys[0];
 
