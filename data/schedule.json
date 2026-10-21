@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T05:18:58.748Z",
+ "generated": "2026-10-21T10:19:58.249Z",
  "partial": {},
  "games": [
   {
@@ -454,6 +454,102 @@
    "a": "Portland Trail Blazers",
    "h": "Los Angeles Lakers",
    "t": "nbc",
+   "state": "pre"
+  },
+  {
+   "id": "401909881",
+   "s": "2026-10-28T23:00:00Z",
+   "a": "Miami Heat",
+   "h": "Atlanta Hawks",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401909882",
+   "s": "2026-10-28T23:00:00Z",
+   "a": "Washington Wizards",
+   "h": "Cleveland Cavaliers",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401909883",
+   "s": "2026-10-28T23:00:00Z",
+   "a": "Charlotte Hornets",
+   "h": "Detroit Pistons",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401909884",
+   "s": "2026-10-28T23:00:00Z",
+   "a": "Philadelphia 76ers",
+   "h": "Indiana Pacers",
+   "t": "espn",
+   "state": "pre"
+  },
+  {
+   "id": "401909885",
+   "s": "2026-10-28T23:30:00Z",
+   "a": "Orlando Magic",
+   "h": "Toronto Raptors",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401909886",
+   "s": "2026-10-29T00:00:00Z",
+   "a": "New York Knicks",
+   "h": "Chicago Bulls",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401909887",
+   "s": "2026-10-29T00:00:00Z",
+   "a": "Houston Rockets",
+   "h": "Milwaukee Bucks",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401909888",
+   "s": "2026-10-29T00:00:00Z",
+   "a": "Golden State Warriors",
+   "h": "Minnesota Timberwolves",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401909889",
+   "s": "2026-10-29T00:00:00Z",
+   "a": "Denver Nuggets",
+   "h": "New Orleans Pelicans",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401909890",
+   "s": "2026-10-29T01:00:00Z",
+   "a": "San Antonio Spurs",
+   "h": "Utah Jazz",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401909891",
+   "s": "2026-10-29T01:30:00Z",
+   "a": "Oklahoma City Thunder",
+   "h": "Dallas Mavericks",
+   "t": "espn",
+   "state": "pre"
+  },
+  {
+   "id": "401909892",
+   "s": "2026-10-29T02:30:00Z",
+   "a": "Los Angeles Lakers",
+   "h": "LA Clippers",
+   "t": "lp",
    "state": "pre"
   }
  ]
