@@ -166,8 +166,8 @@ footer { color: var(--muted); font-size: 0.8rem; border-top: 0.1rem solid var(--
   <main id="main" class="wrap" style="gap:1.75rem"></main>
 
   <footer>
-    Prototype with real schedule data for Oct 20&ndash;27, 2026, checked on Oct 20 against NBA, NBC, ESPN and Amazon announcements.
-    Broadcasts can change. Games not on national TV are listed under League Pass. Final scores shown as of Oct 20.
+    Schedule, channels and final scores come from ESPN&rsquo;s public feed and refresh through the day.
+    Broadcasts can change. Games not on national TV are listed under League Pass.
   </footer>
 </div>
 
@@ -242,20 +242,28 @@ footer { color: var(--muted); font-size: 0.8rem; border-top: 0.1rem solid var(--
     // Tue Oct 27 (only the NBC games are known so far)
     { s: "2026-10-28T00:00:00Z", a: "Detroit Pistons", h: "New York Knicks", t: "nbc", n: NBC_NOTE },
     { s: "2026-10-28T03:00:00Z", a: "Portland Trail Blazers", h: "Los Angeles Lakers", t: "nbc", n: NBC_NOTE }
-  ].map(function (g) {
+  ];
+  // Warriors games that are not on national TV are blacked out on League Pass in San Francisco.
+  function prep(g) {
     g.ms = Date.parse(g.s);
-    // Warriors games that are not on national TV are blacked out on League Pass in San Francisco.
     if (g.t === "lp" && (g.a + g.h).indexOf("Golden State") > -1) g.t = "local";
     return g;
-  });
+  }
+  GAMES = GAMES.map(prep);
 
   var PARTIAL = { "2026-10-27": "Only the games on NBC are listed for this day so far." };
 
   // Final scores only (away points, home points), keyed by start time and away team.
   // In the live version these come from a score feed each time the page loads.
   var SCORES = { "2026-10-20T19:00:00Z|Boston Celtics": { a: 113, h: 121 } };
+  GAMES.forEach(function (g) {
+    var k = g.s + "|" + g.a;
+    if (SCORES[k]) { g.as = SCORES[k].a; g.hs = SCORES[k].h; g.state = "post"; }
+  });
 
   var SERVICE = {
+    abc:   { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "ABC", note: "The ESPN app has it too. You do not need it." },
+    peacock: { cls: "lp", svc: "Peacock", pick: "Open this", chan: "Peacock", note: "Only on Peacock. YouTube TV does not have this game." },
     nbc:   { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "NBC", note: "Peacock has this game too. You do not need it." },
     nbcsn: { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "NBCSN", note: "Peacock has this game too. You do not need it." },
     espn:  { cls: "ytv", svc: "YouTube TV", pick: "Tap this channel", chan: "ESPN", note: "The ESPN app has it too. You do not need it." },
@@ -276,6 +284,8 @@ footer { color: var(--muted); font-size: 0.8rem; border-top: 0.1rem solid var(--
 
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
   function status(g, now) {
+    if (g.state === "post") return "done";
+    if (g.state === "in") return "live";
     if (now >= g.ms && now < g.ms + GAME_MS) return "live";
     if (now >= g.ms + GAME_MS) return "done";
     return "soon";
@@ -345,7 +355,7 @@ footer { color: var(--muted); font-size: 0.8rem; border-top: 0.1rem solid var(--
   }
   function card(g, now) {
     var st = status(g, now), v = SERVICE[g.t], pill = "";
-    var sc = st === "done" ? SCORES[g.s + "|" + g.a] : null;
+    var sc = st === "done" && typeof g.as === "number" ? { a: g.as, h: g.hs } : null;
     if (st === "live") pill = '<span class="pill live">Live now</span>';
     else if (st === "done") pill = '<span class="pill">' + (sc ? "Final" : "Finished") + "</span>";
     else if (until(g, now)) pill = '<span class="pill">' + until(g, now) + "</span>";
@@ -429,9 +439,72 @@ footer { color: var(--muted); font-size: 0.8rem; border-top: 0.1rem solid var(--
     document.getElementById("main").innerHTML = html;
   }
 
+  function normTeam(name) { return name === "Los Angeles Clippers" ? "LA Clippers" : name; }
+
+  // Replace the built-in games with data/schedule.json (built by the GitHub Action).
+  function applyData(json) {
+    if (!json || !json.games || !json.games.length) return false;
+    var list = json.games.map(function (g) {
+      return prep({ id: g.id, s: g.s, a: g.a, h: g.h, t: g.t, state: g.state, as: g.as, hs: g.hs, n: g.n });
+    });
+    // In some areas NBC shows only one of two same-night NBC games.
+    var perDay = {};
+    list.forEach(function (g) {
+      if (g.t === "nbc") { var k = dayKeyFmt.format(g.ms); (perDay[k] = perDay[k] || []).push(g); }
+    });
+    Object.keys(perDay).forEach(function (k) {
+      if (perDay[k].length === 2) perDay[k].forEach(function (g) { g.n = g.n || NBC_NOTE; });
+    });
+    GAMES = list;
+    PARTIAL = json.partial || {};
+    return true;
+  }
+  function loadData() {
+    return fetch("data/schedule.json", { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (json) { if (applyData(json)) render(); })
+      .catch(function () {}); // keep the built-in games
+  }
+
+  // Check ESPN directly for game status and final scores while the page is open.
+  // If the browser is not allowed to read the feed, nothing changes and the data file is used.
+  var etKeyFmt = new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York", year: "numeric", month: "2-digit", day: "2-digit" });
+  function espnDay(ms) { return etKeyFmt.format(ms).replace(/-/g, ""); }
+  function refreshLive() {
+    var now = Date.now();
+    var days = [espnDay(now - 86400000), espnDay(now), espnDay(now + 86400000)];
+    return Promise.all(days.map(function (d) {
+      return fetch("https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=" + d)
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); });
+    })).then(function (all) {
+      var changed = false;
+      all.forEach(function (data) {
+        (data.events || []).forEach(function (ev) {
+          var c = ev.competitions && ev.competitions[0];
+          if (!c || !c.competitors) return;
+          var home = c.competitors.filter(function (x) { return x.homeAway === "home"; })[0];
+          var away = c.competitors.filter(function (x) { return x.homeAway === "away"; })[0];
+          if (!home || !away) return;
+          var a = normTeam(away.team.displayName), start = Date.parse(ev.date);
+          var g = GAMES.filter(function (x) { return x.id === String(ev.id) || (x.ms === start && x.a === a); })[0];
+          if (!g) return;
+          var st = ev.status && ev.status.type && ev.status.type.state;
+          st = st === "in" || st === "post" ? st : "pre";
+          var as = Number(away.score), hs = Number(home.score);
+          if (g.state !== st) { g.state = st; changed = true; }
+          if (st === "post" && isFinite(as) && isFinite(hs) && (g.as !== as || g.hs !== hs)) { g.as = as; g.hs = hs; changed = true; }
+        });
+      });
+      if (changed) render();
+    }).catch(function () {});
+  }
+
   applySize();
   render();
+  loadData().then(refreshLive);
   setInterval(render, 60000);
+  setInterval(function () { if (!document.hidden) refreshLive(); }, 120000);
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) loadData().then(refreshLive); });
 })();
 </script>
 </body>
