@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T10:19:58.249Z",
+ "generated": "2026-10-22T00:44:00.243Z",
  "partial": {},
  "games": [
   {
@@ -38,7 +38,7 @@
    "a": "Atlanta Hawks",
    "h": "Orlando Magic",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909835",
@@ -46,7 +46,7 @@
    "a": "Milwaukee Bucks",
    "h": "Washington Wizards",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909091",
@@ -54,7 +54,7 @@
    "a": "Minnesota Timberwolves",
    "h": "Miami Heat",
    "t": "espn",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909836",
@@ -62,7 +62,7 @@
    "a": "Charlotte Hornets",
    "h": "Brooklyn Nets",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909837",
@@ -70,7 +70,7 @@
    "a": "Chicago Bulls",
    "h": "Toronto Raptors",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909838",
@@ -78,7 +78,7 @@
    "a": "Utah Jazz",
    "h": "Memphis Grizzlies",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909839",
@@ -86,7 +86,7 @@
    "a": "Indiana Pacers",
    "h": "New Orleans Pelicans",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909840",
@@ -94,7 +94,7 @@
    "a": "Dallas Mavericks",
    "h": "Houston Rockets",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909092",
