@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T05:49:05.439Z",
+ "generated": "2026-10-22T11:19:26.814Z",
  "partial": {},
  "games": [
   {
@@ -541,6 +541,30 @@
    "s": "2026-10-29T02:30:00Z",
    "a": "Los Angeles Lakers",
    "h": "LA Clippers",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401909893",
+   "s": "2026-10-29T23:00:00Z",
+   "a": "Cleveland Cavaliers",
+   "h": "Atlanta Hawks",
+   "t": "nbatv",
+   "state": "pre"
+  },
+  {
+   "id": "401909894",
+   "s": "2026-10-30T00:00:00Z",
+   "a": "Sacramento Kings",
+   "h": "New Orleans Pelicans",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401909895",
+   "s": "2026-10-30T02:00:00Z",
+   "a": "Memphis Grizzlies",
+   "h": "Portland Trail Blazers",
    "t": "lp",
    "state": "pre"
   }
