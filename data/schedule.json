@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T21:30:34.803Z",
+ "generated": "2026-10-25T23:31:46.835Z",
  "partial": {},
  "games": [
   {
@@ -96,7 +96,7 @@
    "a": "Indiana Pacers",
    "h": "Brooklyn Nets",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909863",
@@ -104,7 +104,7 @@
    "a": "Orlando Magic",
    "h": "New York Knicks",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909864",
@@ -112,7 +112,7 @@
    "a": "Toronto Raptors",
    "h": "Minnesota Timberwolves",
    "t": "nbatv",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909865",
@@ -120,7 +120,7 @@
    "a": "LA Clippers",
    "h": "Oklahoma City Thunder",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909866",
