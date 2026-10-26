@@ -1,87 +1,7 @@
 {
- "generated": "2026-10-26T01:40:54.812Z",
+ "generated": "2026-10-26T07:30:14.319Z",
  "partial": {},
  "games": [
-  {
-   "id": "401909853",
-   "s": "2026-10-24T22:00:00Z",
-   "a": "Miami Heat",
-   "h": "Charlotte Hornets",
-   "t": "lp",
-   "state": "post",
-   "as": 110,
-   "hs": 115
-  },
-  {
-   "id": "401909854",
-   "s": "2026-10-24T23:30:00Z",
-   "a": "Brooklyn Nets",
-   "h": "Cleveland Cavaliers",
-   "t": "lp",
-   "state": "post",
-   "as": 121,
-   "hs": 125
-  },
-  {
-   "id": "401909855",
-   "s": "2026-10-24T23:30:00Z",
-   "a": "Milwaukee Bucks",
-   "h": "Philadelphia 76ers",
-   "t": "nbatv",
-   "state": "post",
-   "as": 116,
-   "hs": 127
-  },
-  {
-   "id": "401909857",
-   "s": "2026-10-25T00:00:00Z",
-   "a": "Washington Wizards",
-   "h": "Chicago Bulls",
-   "t": "lp",
-   "state": "post",
-   "as": 124,
-   "hs": 120
-  },
-  {
-   "id": "401909858",
-   "s": "2026-10-25T00:00:00Z",
-   "a": "San Antonio Spurs",
-   "h": "Dallas Mavericks",
-   "t": "lp",
-   "state": "post",
-   "as": 122,
-   "hs": 106
-  },
-  {
-   "id": "401909856",
-   "s": "2026-10-25T00:30:00Z",
-   "a": "Houston Rockets",
-   "h": "Atlanta Hawks",
-   "t": "lp",
-   "state": "post",
-   "as": 121,
-   "hs": 114
-  },
-  {
-   "id": "401909859",
-   "s": "2026-10-25T01:00:00Z",
-   "a": "New Orleans Pelicans",
-   "h": "Denver Nuggets",
-   "t": "lp",
-   "state": "post",
-   "as": 135,
-   "hs": 141
-  },
-  {
-   "id": "401909860",
-   "s": "2026-10-25T02:00:00Z",
-   "a": "Golden State Warriors",
-   "h": "Phoenix Suns",
-   "t": "nbatv",
-   "state": "post",
-   "as": 122,
-   "hs": 131
-  },
   {
    "id": "401909861",
    "s": "2026-10-25T21:00:00Z",
@@ -138,7 +58,9 @@
    "a": "Detroit Pistons",
    "h": "Philadelphia 76ers",
    "t": "lp",
-   "state": "in"
+   "state": "post",
+   "as": 106,
+   "hs": 93
   },
   {
    "id": "401909867",
@@ -146,7 +68,9 @@
    "a": "Memphis Grizzlies",
    "h": "Sacramento Kings",
    "t": "lp",
-   "state": "in"
+   "state": "post",
+   "as": 123,
+   "hs": 112
   },
   {
    "id": "401909868",
