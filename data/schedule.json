@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T08:40:10.750Z",
+ "generated": "2026-10-30T02:41:01.174Z",
  "partial": {},
  "games": [
   {
@@ -128,7 +128,9 @@
    "a": "Cleveland Cavaliers",
    "h": "Atlanta Hawks",
    "t": "nbatv",
-   "state": "pre"
+   "state": "post",
+   "as": 111,
+   "hs": 114
   },
   {
    "id": "401909894",
@@ -136,7 +138,9 @@
    "a": "Sacramento Kings",
    "h": "New Orleans Pelicans",
    "t": "lp",
-   "state": "pre"
+   "state": "post",
+   "as": 120,
+   "hs": 132
   },
   {
    "id": "401909895",
@@ -144,7 +148,7 @@
    "a": "Memphis Grizzlies",
    "h": "Portland Trail Blazers",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909277",
