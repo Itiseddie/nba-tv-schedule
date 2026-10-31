@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31T08:31:42.615Z",
+ "generated": "2026-10-31T22:15:34.851Z",
  "partial": {},
  "games": [
   {
@@ -108,7 +108,9 @@
    "a": "Portland Trail Blazers",
    "h": "Utah Jazz",
    "t": "lp",
-   "state": "pre"
+   "state": "post",
+   "as": 112,
+   "hs": 90
   },
   {
    "id": "401909897",
@@ -116,7 +118,7 @@
    "a": "Philadelphia 76ers",
    "h": "Charlotte Hornets",
    "t": "nbatv",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909898",
