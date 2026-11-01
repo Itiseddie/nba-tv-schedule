@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31T22:15:34.851Z",
+ "generated": "2026-11-01T01:16:50.112Z",
  "partial": {},
  "games": [
   {
@@ -118,7 +118,9 @@
    "a": "Philadelphia 76ers",
    "h": "Charlotte Hornets",
    "t": "nbatv",
-   "state": "in"
+   "state": "post",
+   "as": 109,
+   "hs": 104
   },
   {
    "id": "401909898",
@@ -126,7 +128,7 @@
    "a": "Atlanta Hawks",
    "h": "New Orleans Pelicans",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909899",
@@ -134,7 +136,7 @@
    "a": "Sacramento Kings",
    "h": "Memphis Grizzlies",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909900",
@@ -142,7 +144,7 @@
    "a": "Cleveland Cavaliers",
    "h": "Milwaukee Bucks",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909901",
@@ -150,7 +152,7 @@
    "a": "Minnesota Timberwolves",
    "h": "San Antonio Spurs",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909902",
@@ -158,7 +160,7 @@
    "a": "Oklahoma City Thunder",
    "h": "Houston Rockets",
    "t": "nbatv",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909903",
