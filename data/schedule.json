@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T18:45:51.683Z",
+ "generated": "2026-11-01T22:36:49.968Z",
  "partial": {},
  "games": [
   {
@@ -78,7 +78,7 @@
    "a": "Boston Celtics",
    "h": "Orlando Magic",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909904",
@@ -86,7 +86,7 @@
    "a": "Brooklyn Nets",
    "h": "Indiana Pacers",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909905",
