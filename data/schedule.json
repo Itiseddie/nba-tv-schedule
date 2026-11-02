@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T22:36:49.968Z",
+ "generated": "2026-11-02T01:48:51.968Z",
  "partial": {},
  "games": [
   {
@@ -78,7 +78,9 @@
    "a": "Boston Celtics",
    "h": "Orlando Magic",
    "t": "lp",
-   "state": "in"
+   "state": "post",
+   "as": 108,
+   "hs": 97
   },
   {
    "id": "401909904",
@@ -86,7 +88,9 @@
    "a": "Brooklyn Nets",
    "h": "Indiana Pacers",
    "t": "lp",
-   "state": "in"
+   "state": "post",
+   "as": 98,
+   "hs": 90
   },
   {
    "id": "401909905",
@@ -94,7 +98,7 @@
    "a": "LA Clippers",
    "h": "Golden State Warriors",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909906",
