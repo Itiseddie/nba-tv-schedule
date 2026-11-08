@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T22:30:31.859Z",
+ "generated": "2026-11-08T01:47:28.418Z",
  "partial": {},
  "games": [
   {
@@ -98,7 +98,9 @@
    "a": "Denver Nuggets",
    "h": "Indiana Pacers",
    "t": "nbatv",
-   "state": "in"
+   "state": "post",
+   "as": 114,
+   "hs": 102
   },
   {
    "id": "401909939",
@@ -106,7 +108,7 @@
    "a": "Brooklyn Nets",
    "h": "Atlanta Hawks",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909940",
@@ -114,7 +116,7 @@
    "a": "New York Knicks",
    "h": "Cleveland Cavaliers",
    "t": "nbatv",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909941",
@@ -122,7 +124,7 @@
    "a": "Washington Wizards",
    "h": "Oklahoma City Thunder",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909942",
@@ -130,7 +132,7 @@
    "a": "Orlando Magic",
    "h": "Golden State Warriors",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909943",
