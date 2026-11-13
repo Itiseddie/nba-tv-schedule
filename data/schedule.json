@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13T06:24:36.757Z",
+ "generated": "2026-11-13T14:54:27.089Z",
  "partial": {},
  "games": [
   {
@@ -455,6 +455,78 @@
    "s": "2026-11-20T01:00:00Z",
    "a": "LA Clippers",
    "h": "San Antonio Spurs",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401909305",
+   "s": "2026-11-21T00:00:00Z",
+   "a": "Charlotte Hornets",
+   "h": "Atlanta Hawks",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401909306",
+   "s": "2026-11-21T00:30:00Z",
+   "a": "Orlando Magic",
+   "h": "Brooklyn Nets",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401909307",
+   "s": "2026-11-21T00:30:00Z",
+   "a": "Indiana Pacers",
+   "h": "Cleveland Cavaliers",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401909308",
+   "s": "2026-11-21T00:30:00Z",
+   "a": "Toronto Raptors",
+   "h": "Detroit Pistons",
+   "t": "prime",
+   "state": "pre"
+  },
+  {
+   "id": "401909309",
+   "s": "2026-11-21T01:00:00Z",
+   "a": "Washington Wizards",
+   "h": "Chicago Bulls",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401909310",
+   "s": "2026-11-21T01:00:00Z",
+   "a": "New Orleans Pelicans",
+   "h": "Oklahoma City Thunder",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401909311",
+   "s": "2026-11-21T02:30:00Z",
+   "a": "Phoenix Suns",
+   "h": "Utah Jazz",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401909312",
+   "s": "2026-11-21T03:00:00Z",
+   "a": "Houston Rockets",
+   "h": "Denver Nuggets",
+   "t": "prime",
+   "state": "pre"
+  },
+  {
+   "id": "401909313",
+   "s": "2026-11-21T03:00:00Z",
+   "a": "Sacramento Kings",
+   "h": "Los Angeles Lakers",
    "t": "lp",
    "state": "pre"
   }
