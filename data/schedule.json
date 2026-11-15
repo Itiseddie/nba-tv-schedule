@@ -1,104 +1,16 @@
 {
- "generated": "2026-11-15T02:26:16.925Z",
+ "generated": "2026-11-15T09:53:27.104Z",
  "partial": {},
  "games": [
-  {
-   "id": "401909296",
-   "s": "2026-11-14T00:00:00Z",
-   "a": "New York Knicks",
-   "h": "Indiana Pacers",
-   "t": "prime",
-   "state": "post",
-   "as": 104,
-   "hs": 106
-  },
-  {
-   "id": "401909297",
-   "s": "2026-11-14T00:00:00Z",
-   "a": "Milwaukee Bucks",
-   "h": "Orlando Magic",
-   "t": "lp",
-   "state": "post",
-   "as": 99,
-   "hs": 107
-  },
-  {
-   "id": "401909298",
-   "s": "2026-11-14T01:00:00Z",
-   "a": "Cleveland Cavaliers",
-   "h": "Miami Heat",
-   "t": "lp",
-   "state": "post",
-   "as": 121,
-   "hs": 133
-  },
-  {
-   "id": "401909299",
-   "s": "2026-11-14T01:00:00Z",
-   "a": "Atlanta Hawks",
-   "h": "Chicago Bulls",
-   "t": "lp",
-   "state": "post",
-   "as": 117,
-   "hs": 125
-  },
-  {
-   "id": "401909300",
-   "s": "2026-11-14T01:00:00Z",
-   "a": "Memphis Grizzlies",
-   "h": "New Orleans Pelicans",
-   "t": "lp",
-   "state": "post",
-   "as": 142,
-   "hs": 111
-  },
-  {
-   "id": "401909301",
-   "s": "2026-11-14T01:30:00Z",
-   "a": "Utah Jazz",
-   "h": "Houston Rockets",
-   "t": "lp",
-   "state": "post",
-   "as": 118,
-   "hs": 125
-  },
-  {
-   "id": "401909302",
-   "s": "2026-11-14T02:30:00Z",
-   "a": "Golden State Warriors",
-   "h": "San Antonio Spurs",
-   "t": "prime",
-   "state": "post",
-   "as": 85,
-   "hs": 123
-  },
-  {
-   "id": "401909303",
-   "s": "2026-11-14T03:00:00Z",
-   "a": "Portland Trail Blazers",
-   "h": "Sacramento Kings",
-   "t": "lp",
-   "state": "post",
-   "as": 120,
-   "hs": 107
-  },
-  {
-   "id": "401909304",
-   "s": "2026-11-14T03:30:00Z",
-   "a": "Oklahoma City Thunder",
-   "h": "LA Clippers",
-   "t": "lp",
-   "state": "post",
-   "as": 112,
-   "hs": 113
-  },
   {
    "id": "401909980",
    "s": "2026-11-15T00:00:00Z",
    "a": "Denver Nuggets",
    "h": "New Orleans Pelicans",
    "t": "lp",
-   "state": "in"
+   "state": "post",
+   "as": 116,
+   "hs": 108
   },
   {
    "id": "401909981",
@@ -106,7 +18,9 @@
    "a": "Dallas Mavericks",
    "h": "Cleveland Cavaliers",
    "t": "lp",
-   "state": "in"
+   "state": "post",
+   "as": 117,
+   "hs": 127
   },
   {
    "id": "401909982",
@@ -114,7 +28,9 @@
    "a": "Detroit Pistons",
    "h": "Miami Heat",
    "t": "nbatv",
-   "state": "in"
+   "state": "post",
+   "as": 117,
+   "hs": 137
   },
   {
    "id": "401909983",
@@ -122,7 +38,9 @@
    "a": "Brooklyn Nets",
    "h": "Memphis Grizzlies",
    "t": "lp",
-   "state": "in"
+   "state": "post",
+   "as": 110,
+   "hs": 129
   },
   {
    "id": "401909984",
@@ -130,7 +48,9 @@
    "a": "Chicago Bulls",
    "h": "Minnesota Timberwolves",
    "t": "lp",
-   "state": "in"
+   "state": "post",
+   "as": 117,
+   "hs": 106
   },
   {
    "id": "401909985",
@@ -554,6 +474,62 @@
    "a": "Boston Celtics",
    "h": "Sacramento Kings",
    "t": "nbatv",
+   "state": "pre"
+  },
+  {
+   "id": "401910029",
+   "s": "2026-11-22T20:30:00Z",
+   "a": "Detroit Pistons",
+   "h": "Atlanta Hawks",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401910030",
+   "s": "2026-11-22T23:00:00Z",
+   "a": "Oklahoma City Thunder",
+   "h": "Miami Heat",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401910031",
+   "s": "2026-11-23T00:00:00Z",
+   "a": "Orlando Magic",
+   "h": "Washington Wizards",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401910032",
+   "s": "2026-11-23T00:00:00Z",
+   "a": "Denver Nuggets",
+   "h": "Chicago Bulls",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401910033",
+   "s": "2026-11-23T00:00:00Z",
+   "a": "Dallas Mavericks",
+   "h": "Utah Jazz",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401910034",
+   "s": "2026-11-23T01:00:00Z",
+   "a": "Indiana Pacers",
+   "h": "New York Knicks",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401910035",
+   "s": "2026-11-23T01:30:00Z",
+   "a": "Boston Celtics",
+   "h": "Golden State Warriors",
+   "t": "lp",
    "state": "pre"
   }
  ]
