@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T23:19:40.117Z",
+ "generated": "2026-11-16T02:53:15.427Z",
  "partial": {},
  "games": [
   {
@@ -68,7 +68,9 @@
    "a": "Los Angeles Lakers",
    "h": "Phoenix Suns",
    "t": "lp",
-   "state": "in"
+   "state": "post",
+   "as": 131,
+   "hs": 123
   },
   {
    "id": "401909987",
@@ -76,7 +78,9 @@
    "a": "Charlotte Hornets",
    "h": "LA Clippers",
    "t": "lp",
-   "state": "in"
+   "state": "post",
+   "as": 105,
+   "hs": 113
   },
   {
    "id": "401909988",
@@ -84,7 +88,9 @@
    "a": "San Antonio Spurs",
    "h": "Utah Jazz",
    "t": "lp",
-   "state": "in"
+   "state": "post",
+   "as": 110,
+   "hs": 102
   },
   {
    "id": "401909989",
@@ -92,7 +98,9 @@
    "a": "Dallas Mavericks",
    "h": "Boston Celtics",
    "t": "lp",
-   "state": "in"
+   "state": "post",
+   "as": 94,
+   "hs": 131
   },
   {
    "id": "401909990",
@@ -100,7 +108,9 @@
    "a": "New York Knicks",
    "h": "Toronto Raptors",
    "t": "lp",
-   "state": "in"
+   "state": "post",
+   "as": 112,
+   "hs": 108
   },
   {
    "id": "401909991",
@@ -108,7 +118,9 @@
    "a": "Houston Rockets",
    "h": "Washington Wizards",
    "t": "lp",
-   "state": "pre"
+   "state": "post",
+   "as": 147,
+   "hs": 119
   },
   {
    "id": "401909992",
@@ -116,7 +128,7 @@
    "a": "Atlanta Hawks",
    "h": "Milwaukee Bucks",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909993",
@@ -124,7 +136,7 @@
    "a": "Oklahoma City Thunder",
    "h": "Sacramento Kings",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909994",
