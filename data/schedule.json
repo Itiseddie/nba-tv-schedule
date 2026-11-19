@@ -1,64 +1,16 @@
 {
- "generated": "2026-11-19T00:58:50.643Z",
+ "generated": "2026-11-19T08:38:22.976Z",
  "partial": {},
  "games": [
-  {
-   "id": "401910002",
-   "s": "2026-11-18T00:30:00Z",
-   "a": "New York Knicks",
-   "h": "Toronto Raptors",
-   "t": "lp",
-   "state": "post",
-   "as": 111,
-   "hs": 102
-  },
-  {
-   "id": "401910003",
-   "s": "2026-11-18T01:00:00Z",
-   "a": "Portland Trail Blazers",
-   "h": "Minnesota Timberwolves",
-   "t": "lp",
-   "state": "post",
-   "as": 105,
-   "hs": 106
-  },
-  {
-   "id": "401910004",
-   "s": "2026-11-18T01:00:00Z",
-   "a": "Detroit Pistons",
-   "h": "San Antonio Spurs",
-   "t": "nbc",
-   "state": "post",
-   "as": 105,
-   "hs": 93
-  },
-  {
-   "id": "401910006",
-   "s": "2026-11-18T03:30:00Z",
-   "a": "Utah Jazz",
-   "h": "LA Clippers",
-   "t": "lp",
-   "state": "post",
-   "as": 132,
-   "hs": 107
-  },
-  {
-   "id": "401910005",
-   "s": "2026-11-18T04:00:00Z",
-   "a": "Charlotte Hornets",
-   "h": "Los Angeles Lakers",
-   "t": "nbc",
-   "state": "post",
-   "as": 114,
-   "hs": 118
-  },
   {
    "id": "401910007",
    "s": "2026-11-19T00:00:00Z",
    "a": "Memphis Grizzlies",
    "h": "Cleveland Cavaliers",
    "t": "lp",
-   "state": "in"
+   "state": "post",
+   "as": 124,
+   "hs": 121
   },
   {
    "id": "401910008",
@@ -66,7 +18,9 @@
    "a": "Houston Rockets",
    "h": "Indiana Pacers",
    "t": "lp",
-   "state": "in"
+   "state": "post",
+   "as": 119,
+   "hs": 104
   },
   {
    "id": "401910009",
@@ -74,7 +28,9 @@
    "a": "Milwaukee Bucks",
    "h": "Miami Heat",
    "t": "espn",
-   "state": "in"
+   "state": "post",
+   "as": 130,
+   "hs": 137
   },
   {
    "id": "401910010",
@@ -82,7 +38,9 @@
    "a": "Philadelphia 76ers",
    "h": "Orlando Magic",
    "t": "lp",
-   "state": "in"
+   "state": "post",
+   "as": 121,
+   "hs": 116
   },
   {
    "id": "401910011",
@@ -90,7 +48,9 @@
    "a": "Chicago Bulls",
    "h": "Brooklyn Nets",
    "t": "lp",
-   "state": "in"
+   "state": "post",
+   "as": 137,
+   "hs": 107
   },
   {
    "id": "401910012",
@@ -98,7 +58,9 @@
    "a": "Washington Wizards",
    "h": "Toronto Raptors",
    "t": "lp",
-   "state": "in"
+   "state": "post",
+   "as": 103,
+   "hs": 99
   },
   {
    "id": "401910013",
@@ -106,7 +68,9 @@
    "a": "Detroit Pistons",
    "h": "New Orleans Pelicans",
    "t": "lp",
-   "state": "pre"
+   "state": "post",
+   "as": 122,
+   "hs": 109
   },
   {
    "id": "401910014",
@@ -114,7 +78,9 @@
    "a": "Atlanta Hawks",
    "h": "Oklahoma City Thunder",
    "t": "lp",
-   "state": "pre"
+   "state": "post",
+   "as": 117,
+   "hs": 112
   },
   {
    "id": "401910016",
@@ -122,7 +88,9 @@
    "a": "Golden State Warriors",
    "h": "Dallas Mavericks",
    "t": "lp",
-   "state": "pre"
+   "state": "post",
+   "as": 94,
+   "hs": 116
   },
   {
    "id": "401910015",
@@ -130,7 +98,9 @@
    "a": "Boston Celtics",
    "h": "Denver Nuggets",
    "t": "espn",
-   "state": "pre"
+   "state": "post",
+   "as": 101,
+   "hs": 105
   },
   {
    "id": "401910017",
@@ -138,7 +108,9 @@
    "a": "Utah Jazz",
    "h": "Los Angeles Lakers",
    "t": "lp",
-   "state": "pre"
+   "state": "post",
+   "as": 109,
+   "hs": 97
   },
   {
    "id": "401910018",
@@ -146,7 +118,9 @@
    "a": "Phoenix Suns",
    "h": "Sacramento Kings",
    "t": "lp",
-   "state": "pre"
+   "state": "post",
+   "as": 128,
+   "hs": 107
   },
   {
    "id": "401910019",
