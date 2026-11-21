@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T07:43:36.795Z",
+ "generated": "2026-11-21T20:23:17.879Z",
  "partial": {},
  "games": [
   {
@@ -98,7 +98,7 @@
    "a": "Milwaukee Bucks",
    "h": "Philadelphia 76ers",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401910024",
@@ -458,6 +458,46 @@
    "a": "Golden State Warriors",
    "h": "Portland Trail Blazers",
    "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401910046",
+   "s": "2026-11-28T22:00:00Z",
+   "a": "Orlando Magic",
+   "h": "Washington Wizards",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401910047",
+   "s": "2026-11-28T23:00:00Z",
+   "a": "Brooklyn Nets",
+   "h": "Charlotte Hornets",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401910048",
+   "s": "2026-11-29T01:00:00Z",
+   "a": "Indiana Pacers",
+   "h": "Chicago Bulls",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401910049",
+   "s": "2026-11-29T01:00:00Z",
+   "a": "Oklahoma City Thunder",
+   "h": "Milwaukee Bucks",
+   "t": "lp",
+   "state": "pre"
+  },
+  {
+   "id": "401910050",
+   "s": "2026-11-29T01:30:00Z",
+   "a": "Philadelphia 76ers",
+   "h": "Houston Rockets",
+   "t": "nbatv",
    "state": "pre"
   }
  ]
