@@ -1,67 +1,7 @@
 {
- "generated": "2026-11-23T00:00:37.906Z",
+ "generated": "2026-11-23T07:52:37.382Z",
  "partial": {},
  "games": [
-  {
-   "id": "401910023",
-   "s": "2026-11-21T18:00:00Z",
-   "a": "Milwaukee Bucks",
-   "h": "Philadelphia 76ers",
-   "t": "lp",
-   "state": "post",
-   "as": 129,
-   "hs": 132
-  },
-  {
-   "id": "401910024",
-   "s": "2026-11-22T00:30:00Z",
-   "a": "Portland Trail Blazers",
-   "h": "New York Knicks",
-   "t": "nbatv",
-   "state": "post",
-   "as": 96,
-   "hs": 97
-  },
-  {
-   "id": "401910025",
-   "s": "2026-11-22T01:00:00Z",
-   "a": "LA Clippers",
-   "h": "Dallas Mavericks",
-   "t": "lp",
-   "state": "post",
-   "as": 100,
-   "hs": 110
-  },
-  {
-   "id": "401910026",
-   "s": "2026-11-22T01:00:00Z",
-   "a": "Memphis Grizzlies",
-   "h": "Minnesota Timberwolves",
-   "t": "lp",
-   "state": "post",
-   "as": 95,
-   "hs": 104
-  },
-  {
-   "id": "401910027",
-   "s": "2026-11-22T01:00:00Z",
-   "a": "New Orleans Pelicans",
-   "h": "San Antonio Spurs",
-   "t": "lp",
-   "state": "post",
-   "as": 91,
-   "hs": 114
-  },
-  {
-   "id": "401910028",
-   "s": "2026-11-22T03:00:00Z",
-   "a": "Boston Celtics",
-   "h": "Sacramento Kings",
-   "t": "nbatv",
-   "state": "post",
-   "as": 96,
-   "hs": 97
-  },
   {
    "id": "401910029",
    "s": "2026-11-22T20:30:00Z",
@@ -78,7 +18,9 @@
    "a": "Oklahoma City Thunder",
    "h": "Miami Heat",
    "t": "lp",
-   "state": "in"
+   "state": "post",
+   "as": 113,
+   "hs": 123
   },
   {
    "id": "401910031",
@@ -86,7 +28,9 @@
    "a": "Orlando Magic",
    "h": "Washington Wizards",
    "t": "lp",
-   "state": "pre"
+   "state": "post",
+   "as": 96,
+   "hs": 116
   },
   {
    "id": "401910032",
@@ -94,7 +38,9 @@
    "a": "Denver Nuggets",
    "h": "Chicago Bulls",
    "t": "lp",
-   "state": "pre"
+   "state": "post",
+   "as": 151,
+   "hs": 145
   },
   {
    "id": "401910033",
@@ -102,7 +48,9 @@
    "a": "Dallas Mavericks",
    "h": "Utah Jazz",
    "t": "lp",
-   "state": "pre"
+   "state": "post",
+   "as": 116,
+   "hs": 114
   },
   {
    "id": "401910034",
@@ -110,7 +58,9 @@
    "a": "Indiana Pacers",
    "h": "New York Knicks",
    "t": "lp",
-   "state": "pre"
+   "state": "post",
+   "as": 106,
+   "hs": 113
   },
   {
    "id": "401910035",
@@ -118,7 +68,9 @@
    "a": "Boston Celtics",
    "h": "Golden State Warriors",
    "t": "lp",
-   "state": "pre"
+   "state": "post",
+   "as": 87,
+   "hs": 88
   },
   {
    "id": "401910036",
