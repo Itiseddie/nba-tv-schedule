@@ -1,97 +1,9 @@
 {
- "generated": "2026-11-26T11:03:35.337Z",
- "partial": {},
+ "generated": "2026-11-27T10:59:36.435Z",
+ "partial": {
+  "2026-12-04": "Only the games on national TV are listed for this day so far."
+ },
  "games": [
-  {
-   "id": "401909317",
-   "s": "2026-11-25T22:00:00Z",
-   "a": "Miami Heat",
-   "h": "Philadelphia 76ers",
-   "t": "espn",
-   "state": "post",
-   "as": 104,
-   "hs": 111
-  },
-  {
-   "id": "401909318",
-   "s": "2026-11-26T00:00:00Z",
-   "a": "Chicago Bulls",
-   "h": "Charlotte Hornets",
-   "t": "lp",
-   "state": "post",
-   "as": 107,
-   "hs": 105
-  },
-  {
-   "id": "401909319",
-   "s": "2026-11-26T00:30:00Z",
-   "a": "Cleveland Cavaliers",
-   "h": "New York Knicks",
-   "t": "lp",
-   "state": "post",
-   "as": 102,
-   "hs": 121
-  },
-  {
-   "id": "401909320",
-   "s": "2026-11-26T00:30:00Z",
-   "a": "Minnesota Timberwolves",
-   "h": "Oklahoma City Thunder",
-   "t": "espn",
-   "state": "post",
-   "as": 113,
-   "hs": 106
-  },
-  {
-   "id": "401909321",
-   "s": "2026-11-26T01:00:00Z",
-   "a": "LA Clippers",
-   "h": "Memphis Grizzlies",
-   "t": "lp",
-   "state": "post",
-   "as": 97,
-   "hs": 115
-  },
-  {
-   "id": "401909322",
-   "s": "2026-11-26T01:00:00Z",
-   "a": "Brooklyn Nets",
-   "h": "Milwaukee Bucks",
-   "t": "lp",
-   "state": "post",
-   "as": 104,
-   "hs": 97
-  },
-  {
-   "id": "401909323",
-   "s": "2026-11-26T01:30:00Z",
-   "a": "Phoenix Suns",
-   "h": "Houston Rockets",
-   "t": "lp",
-   "state": "post",
-   "as": 104,
-   "hs": 116
-  },
-  {
-   "id": "401909324",
-   "s": "2026-11-26T03:00:00Z",
-   "a": "Sacramento Kings",
-   "h": "Golden State Warriors",
-   "t": "lp",
-   "state": "post",
-   "as": 110,
-   "hs": 129
-  },
-  {
-   "id": "401909325",
-   "s": "2026-11-26T03:00:00Z",
-   "a": "San Antonio Spurs",
-   "h": "Portland Trail Blazers",
-   "t": "espn",
-   "state": "post",
-   "as": 111,
-   "hs": 116
-  },
   {
    "id": "401909326",
    "s": "2026-11-28T00:00:00Z",
@@ -543,6 +455,22 @@
   {
    "id": "401909451",
    "s": "2026-12-04T05:00:00Z",
+   "a": "TBD",
+   "h": "TBD",
+   "t": "prime",
+   "state": "pre"
+  },
+  {
+   "id": "401909452",
+   "s": "2026-12-05T05:00:00Z",
+   "a": "TBD",
+   "h": "TBD",
+   "t": "prime",
+   "state": "pre"
+  },
+  {
+   "id": "401909453",
+   "s": "2026-12-05T05:00:00Z",
    "a": "TBD",
    "h": "TBD",
    "t": "prime",
