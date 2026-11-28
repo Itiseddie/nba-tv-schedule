@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-27T10:59:36.435Z",
+ "generated": "2026-11-28T01:47:16.901Z",
  "partial": {
   "2026-12-04": "Only the games on national TV are listed for this day so far."
  },
@@ -10,7 +10,7 @@
    "a": "Miami Heat",
    "h": "New York Knicks",
    "t": "prime",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909327",
@@ -18,7 +18,7 @@
    "a": "Milwaukee Bucks",
    "h": "Detroit Pistons",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909328",
@@ -26,7 +26,7 @@
    "a": "Philadelphia 76ers",
    "h": "Indiana Pacers",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909329",
@@ -34,7 +34,7 @@
    "a": "Brooklyn Nets",
    "h": "Toronto Raptors",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909330",
@@ -42,7 +42,7 @@
    "a": "Atlanta Hawks",
    "h": "Boston Celtics",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909331",
@@ -50,7 +50,7 @@
    "a": "Memphis Grizzlies",
    "h": "Minnesota Timberwolves",
    "t": "lp",
-   "state": "pre"
+   "state": "in"
   },
   {
    "id": "401909332",
